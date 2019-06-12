@@ -19,9 +19,6 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT bears.color COUNT (bears.color) FROM bears WHERE [column name] = [value]"
-  
-  
   SELECT bears.color, COUNT(bears.color) FROM bears GROUP BY bears.color ORDER BY COUNT(*) DESC LIMIT 1;"
 end
 
